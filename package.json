@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "module": "dist/index.js",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ro80t/fjst.git"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },

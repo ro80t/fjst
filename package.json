@@ -1,18 +1,16 @@
 {
   "name": "fjst",
-  "version": "0.0.0",
-  "module": "dist/index.js",
   "type": "module",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/ro80t/fjst.git"
   },
-  "files": [ "dist" ],
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5"
-  }
+    "typescript": "^6.0.2"
+  },
+  "workspaces": []
 }

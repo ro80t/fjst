@@ -1,8 +1,14 @@
 {
   "name": "@fjst/core",
+  "version": "0.0.0",
+  "license": "MIT",
   "type": "module",
   "exports": {
-    ".": {}
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.mts"
+    }
   },
   "devDependencies": {
     "@types/bun": "latest"

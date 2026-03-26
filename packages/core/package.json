@@ -1,0 +1,13 @@
+{
+  "name": "@fjst/core",
+  "type": "module",
+  "exports": {
+    ".": {}
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

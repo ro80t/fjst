@@ -1,16 +1,19 @@
 {
-  "name": "fjst",
-  "type": "module",
+  "name": "fjst-workspace",
+  "private": true,
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/ro80t/fjst.git"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "vite-plus": "^0.1.14"
   },
   "peerDependencies": {
-    "typescript": "^6.0.2"
-  },
-  "workspaces": []
+    "typescript": "6"
+  }
 }

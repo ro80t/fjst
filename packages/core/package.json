@@ -1,6 +1,7 @@
 {
   "name": "@fjst/core",
   "version": "0.0.0",
+  "description": "fjst's core",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -14,6 +15,6 @@
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^6.0.2"
   }
 }

@@ -1,6 +1,6 @@
 import { defineConfig } from "vite-plus";
 
-const packageNames = ["core"];
+const packageNames = ["core", "vite"];
 
 export default defineConfig({
   pack: packageNames.map((name) => ({

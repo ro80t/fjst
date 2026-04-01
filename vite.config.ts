@@ -1,14 +1,9 @@
 import { defineConfig } from "vite-plus";
 
-const packageNames = ["core", "vite"];
-
 export default defineConfig({
-  pack: packageNames.map((name) => ({
-    entry: [`./packages/${name}/src/index.ts`],
-    outDir: `./packages/${name}/dist`,
-    dts: true,
-    format: ["esm", "cjs"],
-  })),
+  pack: {
+    workspace: true,
+  },
   fmt: {
     semi: true,
     singleQuote: false,

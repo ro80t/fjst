@@ -7,6 +7,8 @@ export default defineConfig({
   fmt: {
     semi: true,
     singleQuote: false,
+    useTabs: false,
+    tabWidth: 4,
     sortImports: {},
   },
 });

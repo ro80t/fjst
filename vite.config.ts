@@ -8,7 +8,7 @@ export default defineConfig({
     semi: true,
     singleQuote: false,
     useTabs: false,
-    tabWidth: 4,
+    tabWidth: 2,
     sortImports: {},
   },
 });

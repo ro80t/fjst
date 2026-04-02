@@ -7,13 +7,12 @@
     "url": "https://github.com/ro80t/fjst.git"
   },
   "workspaces": [
-    "packages/**",
-    "packages/**/tests/*"
+    "packages/*"
   ],
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest",
-    "vite-plus": "^0.1.14"
+    "vite-plus": "0.1.15"
   },
   "peerDependencies": {
     "typescript": "6"

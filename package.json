@@ -13,7 +13,9 @@
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest",
-    "vite-plus": "0.1.15"
+    "oxfmt": "^0.43.0",
+    "oxlint": "^1.58.0",
+    "tsdown": "^0.21.7"
   },
   "peerDependencies": {
     "typescript": "6"

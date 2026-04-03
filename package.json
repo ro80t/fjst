@@ -11,6 +11,9 @@
     "packages/**/tests/**"
   ],
   "type": "module",
+  "scripts": {
+    "build": "tsdown"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "oxfmt": "^0.43.0",

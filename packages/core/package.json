@@ -11,6 +11,9 @@
       "types": "./dist/index.d.mts"
     }
   },
+  "dependencies": {
+    "javascript-obfuscator": "^5.4.1"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "oxfmt": "^0.43.0",

@@ -1,3 +1,3 @@
-import config from "../../oxlint.config";
+import config from "../../oxlint.config.ts";
 
 export default config;

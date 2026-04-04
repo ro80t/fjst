@@ -18,9 +18,7 @@ export default function (adapter: Adapter, options?: Options): Adapter {
       const customizedBuilder: Builder = {
         ...builder,
         writeClient(dest) {
-          const files = builder.copy(`${builder.config.kit.outDir}/output/client`, dest, {
-            filter: (basename) => basename !== ".vite",
-          });
+          const files = builder.writeClient(dest);
           for (const file of files) {
             const filePath = join(dest, file);
             const unfixedContent = readFileSync(filePath, "utf-8");

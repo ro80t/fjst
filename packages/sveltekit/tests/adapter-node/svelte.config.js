@@ -1,8 +1,7 @@
 import { relative, sep } from "node:path";
 
+import sveltekitFjst from "@fjst/sveltekit";
 import adapter from "@sveltejs/adapter-node";
-
-import sveltekitFjst from "../../dist/index.mjs";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {

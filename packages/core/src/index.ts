@@ -1,4 +1,4 @@
-import { obfuscate } from "javascript-obfuscator";
+import jsObfuscator from "javascript-obfuscator";
 
 /**
  *
@@ -7,5 +7,5 @@ import { obfuscate } from "javascript-obfuscator";
  *
  */
 export function jsObf(src: string) {
-  return obfuscate(src).getObfuscatedCode();
+  return jsObfuscator.obfuscate(src).getObfuscatedCode();
 }

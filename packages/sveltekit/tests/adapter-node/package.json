@@ -19,6 +19,7 @@
   "devDependencies": {
     "@eslint/compat": "^2.0.3",
     "@eslint/js": "^10.0.1",
+    "@fjst/sveltekit": "workspace:*",
     "@playwright/test": "^1.58.2",
     "@sveltejs/adapter-node": "^5.5.2",
     "@sveltejs/kit": "^2.50.2",

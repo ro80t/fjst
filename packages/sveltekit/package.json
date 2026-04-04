@@ -1,5 +1,25 @@
 {
   "name": "@fjst/sveltekit",
   "version": "0.0.0",
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.mts"
+    }
+  },
+  "dependencies": {
+    "@fjst/core": "workspace:*",
+    "@sveltejs/kit": "^2.55.0"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.43.0",
+    "oxlint": "^1.58.0",
+    "tsdown": "^0.21.7"
+  }
 }

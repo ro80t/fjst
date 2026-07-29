@@ -15,7 +15,7 @@ const config = {
 			return isExternalLibrary ? undefined : true;
 		}
 	},
-	kit: { adapter: sveltekitFjst(adapter()) }
+	kit: { adapter: sveltekitFjst(adapter(), []) }
 };
 
 export default config;

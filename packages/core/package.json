@@ -15,10 +15,10 @@
     "javascript-obfuscator": "^5.4.1"
   },
   "devDependencies": {
-    "@types/bun": "latest",
-    "oxfmt": "^0.43.0",
-    "oxlint": "^1.58.0",
-    "tsdown": "^0.21.7"
+    "@types/bun": "catalog:",
+    "oxfmt": "catalog:",
+    "oxlint": "catalog:",
+    "tsdown": "catalog:"
   },
   "peerDependencies": {
     "typescript": "^6.0.2"

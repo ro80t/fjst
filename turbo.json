@@ -1,6 +1,18 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
-    "test": {}
+    "test": {},
+    "lint": {
+      "dependsOn": ["//#lint:root"]
+    },
+    "//#lint:root": {},
+    "lint:fix": {
+      "dependsOn": ["//#lint:fix:root"]
+    },
+    "//#lint:fix:root": {},
+    "format": {
+      "dependsOn": ["//#format:root"]
+    },
+    "//#format:root": {}
   }
 }

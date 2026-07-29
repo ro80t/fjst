@@ -6,4 +6,5 @@ export default defineConfig({
   useTabs: false,
   tabWidth: 2,
   sortImports: {},
+  ignorePatterns: ["packages/**/tests/**"],
 });

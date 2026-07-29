@@ -1,15 +1,11 @@
 import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 
-import { jsObf } from "@fjst/core";
 import type { Adapter, Builder } from "@sveltejs/kit";
 
-export type Options = {
-  obf?: (src: string) => string;
-};
+export type Transpiler = (src: string) => string;
 
-export default function (adapter: Adapter, options?: Options): Adapter {
-  const obf = options?.obf ?? jsObf;
+export default function (adapter: Adapter, transpilers: Transpiler[]): Adapter {
   return {
     ...adapter,
     async adapt(builder) {
@@ -23,7 +19,13 @@ export default function (adapter: Adapter, options?: Options): Adapter {
             const filePath = join(dest, file);
             const unfixedContent = readFileSync(filePath, "utf-8");
             if (filePath.endsWith(".js")) {
-              writeFileSync(filePath, obf(unfixedContent));
+              let fixedContent = unfixedContent;
+
+              for (const transpiler of transpilers) {
+                fixedContent = transpiler(fixedContent);
+              }
+
+              writeFileSync(filePath, fixedContent);
             }
           }
           return files;

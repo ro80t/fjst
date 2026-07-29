@@ -9,7 +9,7 @@
   "workspaces": {
     "packages": [
       "packages/**",
-      "packages/**/tests/**"
+      "tests/**"
     ],
     "catalog": {
       "@sveltejs/kit": "^2.55.0",

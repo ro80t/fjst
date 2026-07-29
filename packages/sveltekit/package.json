@@ -14,7 +14,6 @@
     }
   },
   "dependencies": {
-    "@fjst/core": "workspace:*",
     "@sveltejs/kit": "catalog:"
   },
   "devDependencies": {

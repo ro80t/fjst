@@ -35,7 +35,6 @@
       "name": "@fjst/sveltekit",
       "version": "0.0.0",
       "dependencies": {
-        "@fjst/core": "workspace:*",
         "@sveltejs/kit": "catalog:",
       },
       "devDependencies": {
@@ -50,6 +49,7 @@
       "devDependencies": {
         "@eslint/compat": "^2.0.3",
         "@eslint/js": "^10.0.1",
+        "@fjst/core": "workspace:*",
         "@fjst/sveltekit": "workspace:*",
         "@playwright/test": "^1.58.2",
         "@sveltejs/adapter-node": "^5.5.2",

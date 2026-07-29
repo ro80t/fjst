@@ -1,5 +1,6 @@
 import { relative, sep } from 'node:path';
 
+import { jsObf } from '@fjst/core';
 import sveltekitFjst from '@fjst/sveltekit';
 import adapter from '@sveltejs/adapter-node';
 
@@ -15,7 +16,7 @@ const config = {
 			return isExternalLibrary ? undefined : true;
 		}
 	},
-	kit: { adapter: sveltekitFjst(adapter(), []) }
+	kit: { adapter: sveltekitFjst(adapter(), [jsObf]) }
 };
 
 export default config;

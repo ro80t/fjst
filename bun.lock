@@ -20,7 +20,7 @@
     },
     "packages/core": {
       "name": "@fjst/core",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "dependencies": {
         "javascript-obfuscator": "^5.4.1",
         "oxc-minify": "^0.142.0",

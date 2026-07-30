@@ -13,6 +13,10 @@
       "types": "./dist/index.d.mts"
     }
   },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "dependencies": {
     "@sveltejs/kit": "catalog:"
   },

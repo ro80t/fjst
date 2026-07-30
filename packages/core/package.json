@@ -14,6 +14,10 @@
       "types": "./dist/index.d.mts"
     }
   },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "dependencies": {
     "javascript-obfuscator": "^5.4.1",
     "oxc-minify": "^0.142.0",

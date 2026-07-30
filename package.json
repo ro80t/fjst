@@ -28,7 +28,9 @@
     "format": "turbo run format",
     "lint:root": "oxlint -c oxlint.config.ts . && oxfmt -c oxfmt.config.ts --check .",
     "lint:fix:root": "oxlint -c oxlint.config.ts . --fix",
-    "format:root": "oxfmt -c oxfmt.config.ts ."
+    "format:root": "oxfmt -c oxfmt.config.ts .",
+    "version": "changeset version && bun install",
+    "release": "changeset publish"
   },
   "dependencies": {
     "@changesets/cli": "^2.31.1"

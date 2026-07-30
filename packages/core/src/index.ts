@@ -1,5 +1,6 @@
 import jsObfuscator from "javascript-obfuscator";
 import { minifySync } from "oxc-minify";
+import { transformSync } from "oxc-transform";
 
 /**
  *
@@ -18,4 +19,14 @@ export function jsObf(src: string) {
  */
 export function jsMinify(src: string, filepath: string) {
   return minifySync(filepath, src).code;
+}
+
+/**
+ *
+ * this func is wrapper of oxc-transform.
+ * returns a transpiler that downlevels JavaScript to the given target(s).
+ *
+ */
+export function jsTranspile(target: string | string[]) {
+  return (src: string, filepath: string) => transformSync(filepath, src, { target }).code;
 }

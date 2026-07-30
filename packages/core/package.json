@@ -16,7 +16,8 @@
   },
   "dependencies": {
     "javascript-obfuscator": "^5.4.1",
-    "oxc-minify": "^0.142.0"
+    "oxc-minify": "^0.142.0",
+    "oxc-transform": "^0.142.0"
   },
   "devDependencies": {
     "@types/bun": "catalog:",

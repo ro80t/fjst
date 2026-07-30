@@ -5,7 +5,7 @@ import type { Adapter, Builder } from "@sveltejs/kit";
 
 export type Transpiler = (src: string, filepath: string) => string;
 
-export default function (adapter: Adapter, transpilers: Transpiler[]): Adapter {
+export function fjstSvelteKit(adapter: Adapter, transpilers: Transpiler[]): Adapter {
   return {
     ...adapter,
     async adapt(builder) {
@@ -36,3 +36,5 @@ export default function (adapter: Adapter, transpilers: Transpiler[]): Adapter {
     },
   };
 }
+
+export default fjstSvelteKit;

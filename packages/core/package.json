@@ -3,6 +3,11 @@
   "version": "0.2.0",
   "description": "fjst's core",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ro80t/fjst.git",
+    "directory": "packages/core"
+  },
   "files": [
     "dist"
   ],

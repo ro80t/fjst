@@ -3,7 +3,7 @@ import { join } from "path";
 
 import type { Adapter, Builder } from "@sveltejs/kit";
 
-export type Transpiler = (src: string) => string;
+export type Transpiler = (src: string, filepath: string) => string;
 
 export default function (adapter: Adapter, transpilers: Transpiler[]): Adapter {
   return {
@@ -22,7 +22,7 @@ export default function (adapter: Adapter, transpilers: Transpiler[]): Adapter {
               let fixedContent = unfixedContent;
 
               for (const transpiler of transpilers) {
-                fixedContent = transpiler(fixedContent);
+                fixedContent = transpiler(fixedContent, filePath);
               }
 
               writeFileSync(filePath, fixedContent);

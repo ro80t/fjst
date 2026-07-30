@@ -20,7 +20,7 @@
     },
     "packages/core": {
       "name": "@fjst/core",
-      "version": "0.0.0",
+      "version": "0.1.0",
       "dependencies": {
         "javascript-obfuscator": "^5.4.1",
         "oxc-minify": "^0.142.0",
@@ -37,7 +37,7 @@
     },
     "packages/sveltekit": {
       "name": "@fjst/sveltekit",
-      "version": "0.0.0",
+      "version": "0.1.0",
       "dependencies": {
         "@sveltejs/kit": "catalog:",
       },

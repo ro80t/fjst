@@ -20,7 +20,11 @@
   },
   "publishConfig": {
     "access": "public",
+    "directory": "package.tgz",
     "provenance": true
+  },
+  "scripts": {
+    "pack": "bun ../../scripts/pack-tarball.ts"
   },
   "dependencies": {
     "@sveltejs/kit": "catalog:"

@@ -21,7 +21,11 @@
   },
   "publishConfig": {
     "access": "public",
+    "directory": "package.tgz",
     "provenance": true
+  },
+  "scripts": {
+    "pack": "bun ../../scripts/pack-tarball.ts"
   },
   "dependencies": {
     "javascript-obfuscator": "^5.4.1",

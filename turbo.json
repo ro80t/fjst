@@ -2,6 +2,9 @@
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
     "test": {},
+    "pack": {
+      "cache": false
+    },
     "lint": {
       "dependsOn": ["//#lint:root"]
     },

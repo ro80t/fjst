@@ -1,5 +1,11 @@
 # @fjst/sveltekit
 
+## 0.3.0
+
+### Minor Changes
+
+- 5fd7c95: feat: update packaging scripts and add tarball creation
+
 ## 0.2.0
 
 ### Minor Changes

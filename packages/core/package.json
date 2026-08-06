@@ -17,6 +17,11 @@
       "import": "./dist/index.mjs",
       "require": "./dist/index.cjs",
       "types": "./dist/index.d.mts"
+    },
+    "./mini": {
+      "import": "./dist/mini/index.mjs",
+      "require": "./dist/mini/index.cjs",
+      "types": "./dist/mini/index.d.mts"
     }
   },
   "publishConfig": {

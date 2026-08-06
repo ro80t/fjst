@@ -1,5 +1,11 @@
 # @fjst/core
 
+## 0.4.0
+
+### Minor Changes
+
+- bca7f41: feat: add mini build output for core and sveltekit packages
+
 ## 0.3.0
 
 ### Minor Changes

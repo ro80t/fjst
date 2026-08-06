@@ -35,6 +35,20 @@ jobs:
       - name: Test
         run: bun run test
 
+      - name: Setup Node
+        if: github.event_name == 'pull_request'
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+
+      - name: Dry run publish
+        if: github.event_name == 'pull_request'
+        run: |
+          bun run pack
+          for pkg in packages/*/package.tgz; do
+            npm publish "$pkg" --dry-run
+          done
+
   release:
     name: Release
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
